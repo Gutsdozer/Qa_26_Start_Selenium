@@ -21,18 +21,28 @@ public class homework {
      //by tagName
       WebElement div = wd.findElement(By.tagName("div"));
       WebElement a = wd.findElement(By.tagName("a"));
+      WebElement a1 = wd.findElement(By.cssSelector("a"));
+
+      WebElement button = wd.findElement(By.xpath("//button"));
 
       //by class
       WebElement login = wd.findElement(By.className("login_login__3EHKB"));
       WebElement login1 = wd.findElement(By.cssSelector(".login_login__3EHKB"));
+      WebElement login2 = wd.findElement(By.xpath("//*[@class = 'login_login__3EHKB']"));
+
 
       //by attribute
       WebElement home = wd.findElement(By.cssSelector("[href = '/home']"));
+
+      //by id
+
+      WebElement ebo = wd.findElement(By.id("root"));
+      WebElement ebo1 = wd.findElement(By.cssSelector("#root"));
   }
 
 
-  @AfterClass
-    public void quit(){
-      wd.quit();
-  }
+  //@AfterClass
+    //public void quit(){
+      //wd.quit();
+  //}
 }
